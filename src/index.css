@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.p-datatable .p-datatable-tbody > tr:hover {
+  background: rgba(99, 179, 237, 0.08) !important;
+  cursor: pointer;
+  transition: background 0.2s;
+}
