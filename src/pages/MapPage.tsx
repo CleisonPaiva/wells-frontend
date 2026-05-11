@@ -31,7 +31,7 @@ export default function MapPage() {
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState<string | null>(null);
     const [filterPanelVisible, setFilterPanelVisible] = useState(false);
-    const [textFilter, setTextFilter] = useState<WellTextFilter>({});
+    const [ , setTextFilter] = useState<WellTextFilter>({});
 
     useEffect(() => {
         const map = new Map({
