@@ -2,7 +2,7 @@ import {useState, useEffect} from "react";
 import {DataTable} from "primereact/datatable";
 import {Column} from "primereact/column";
 import {getWells} from "../services/wellService.ts";
-import type {Well, WellFilter} from "../types/Well.ts";
+import type {Well} from "../types/Well.ts";
 import {InputText} from "primereact/inputtext";
 
 export default function WellsPage() {
