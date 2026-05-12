@@ -31,7 +31,7 @@ export async function getWellByName(name: string){
 //Dados para mapa e legenda
 export async function getWellsForMap(filter: WellMapFilter): Promise<WellMapDto[]> {
     const params = new URLSearchParams();
-    params.append('zoom', filter.Zoom.toString());
+    params.append('Zoom', filter.Zoom.toString());
     params.append('minLatitude', filter.minLatitude.toString());
     params.append('maxLatitude', filter.maxLatitude.toString());
     params.append('minLongitude', filter.minLongitude.toString());
