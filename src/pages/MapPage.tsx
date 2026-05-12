@@ -19,7 +19,6 @@ import {Message} from "primereact/message";
 import FilterPanel, {type WellTextFilter} from "../components/FilterPanel.tsx";
 import {Button} from "primereact/button";
 import BasemapSwitcher from "../components/BasemapSwitcher.tsx";
-import FeatureLayer from "@arcgis/core/layers/FeatureLayer";
 
 export default function MapPage() {
     const mapRef = useRef<HTMLDivElement>(null);
@@ -51,13 +50,6 @@ export default function MapPage() {
         //Layers (Camadas)
         const wellsLayer = new GraphicsLayer();
         map.add(wellsLayer)
-
-        const dutosLayer = new FeatureLayer({
-            url: "https://geo.infrasa.gov.br/server/rest/services/Potal_Dutoviario/Unidades_de_producao_Oleo/FeatureServer",
-            opacity: 0.8
-        });
-
-        map.add(dutosLayer);
 
         //O when fica "escutando" uma condição.
         // Quando ela se torna verdadeira, executa uma função.
